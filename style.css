@@ -1,0 +1,162 @@
+.div,
+.container,
+.todo-ul,
+.input-button-row,
+.btn-container {
+    display: flex;
+}
+
+.toggle-li {
+    text-decoration: line-through;
+    text-decoration-color: red;
+    color: red;
+    border-left: 6px solid red;
+    transition: 0.2s;
+}
+
+.toggle-li:focus {
+    background: black;
+}
+
+h2 {
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+.container {
+    flex-direction: row;
+}
+
+.todo-ul {
+    flex-direction: column;
+}
+
+.input-button-row {
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-ul {
+    gap: 20px;
+    width: 92%;
+    padding: 15px 2px 10px 2px;
+}
+
+.input {
+    width: 70%;
+    padding: 8px 120px 8px 10px;
+    box-shadow: 0.2px 0.2px 5px 0.2px rgb(230, 230, 230);
+    border: none;
+    outline: none;
+}
+
+.input:focus {
+    transition: 0.3s;
+    box-shadow: 0px 0px 2px 0.5px rgb(6 149 246);
+}
+
+.div {
+    margin-left: 85px;
+    justify-content: flex-start;
+    padding: 10px 10px 8px 15px;
+    border-left: 3px solid black;
+    gap: 10px;
+}
+
+.li {
+    font-family: "Roboto";
+}
+
+.check-btn,
+.trash-btn {
+    margin-left: 10px;
+    color: white;
+    background: lightgreen;
+    border: none;
+    padding: 8px 10px 7px 10px;
+}
+
+.check-btn {
+    box-shadow: 0.2px 0.2px 3px 0.2px #58eb93;
+    background: #0cca62;
+}
+
+.trash-btn {
+    box-shadow: 0.2px 0.2px 3px 0.2px rgb(255, 66, 113);
+    background: red;
+}
+
+.check-btn:hover,
+.trash-btn:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.check-btn:hover {
+    color: green;
+}
+
+.trash-btn:hover {
+    color: red;
+}
+
+.btn-container {
+    gap: 10px;
+    margin-right: 110px;
+}
+
+li {
+    font-family: "Montserrat";
+}
+
+.add-button,
+.clear-all-button {
+    border: none;
+}
+
+.check-btn:hover,
+.trash-btn:hover,
+.add-button:hover,
+.clear-all-button:hover {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-button {
+    font-size: 1.2rem;
+    font-family: "Roboto";
+    margin-left: 10px;
+    padding: 2px 10px 5px 10px;
+    height: 2rem;
+    background: #007fff;
+    color: white;
+    border-radius: 4px;
+    box-shadow: 0px 0px 3px 0.5px rgb(6 149 246);
+}
+
+.add-button:hover {
+    background: transparent;
+    color: #007fff;
+    box-shadow: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.clear-all-button {
+    background: white;
+    color: red;
+    border: 2px solid red;
+    padding: 5px 13px 5px 13px;
+    margin-left: 20px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    font-family: "Roboto";
+}
+
+.clear-all-button:hover {
+    font-family: "Roboto";
+    cursor: pointer;
+    background: red;
+    color: white;
+    transition: 0.3s;
+}
